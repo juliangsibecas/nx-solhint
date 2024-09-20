@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "Configuration",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The project to add a Solhint configuration to.",
+      "$default": {
+        "$source": "projectName"
+      },
+      "x-priority": "important",
+      "x-prompt": "What is the name of the project to set up Solhint for?"
+    },
+    "config": {
+      "type": "string",
+      "enum": [
+        "default",
+        "recommended"
+      ],
+      "default": "default",
+      "x-priority": "important",
+      "x-prompt": "Which config do you prefer?",
+      "description": "Solhint config (Default or Recommended)"
+    },
+    "skipFormat": {
+      "description": "Skip formatting files",
+      "type": "boolean",
+      "default": false
+    },
+    "skipPackageJson": {
+      "type": "boolean",
+      "default": false,
+      "description": "Do not add dependencies to `package.json`.",
+      "x-priority": "internal"
+    },
+    "keepExistingVersions": {
+      "type": "boolean",
+      "x-priority": "internal",
+      "description": "Keep existing dependencies versions",
+      "default": false
+    }
+  },
+  "required": [
+    "project",
+    "config"
+  ]
+}

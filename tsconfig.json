@@ -15,7 +15,8 @@
     "baseUrl": ".",
     "paths": {
       "nx-solhint": ["src/index.ts"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "files": [],
   "include": [],

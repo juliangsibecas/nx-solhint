@@ -17,7 +17,7 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/nx-solhint",
+        "outputPath": "dist/{projectRoot}",
         "main": "./src/index.ts",
         "tsConfig": "./tsconfig.lib.json",
         "assets": [
