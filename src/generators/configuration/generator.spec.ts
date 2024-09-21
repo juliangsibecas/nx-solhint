@@ -10,7 +10,7 @@ describe('configuration generator', () => {
   let tree: Tree;
   const options: ConfigurationGeneratorSchema = {
     project: PROJECT_NAME,
-    config: 'default',
+    config: 'Default',
   };
 
   beforeEach(() => {

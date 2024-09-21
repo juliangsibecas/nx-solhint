@@ -15,7 +15,10 @@ export async function configurationGenerator(
   await initGenerator(tree, options);
   const projectRoot = readProjectConfiguration(tree, options.project).root;
 
-  generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
+  generateFiles(tree, path.join(__dirname, 'files'), projectRoot, {
+    ...options,
+    config: options.config.toLowerCase(),
+  });
 
   await formatFiles(tree);
 }

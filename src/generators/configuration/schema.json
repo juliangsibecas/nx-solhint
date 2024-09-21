@@ -16,10 +16,10 @@
     "config": {
       "type": "string",
       "enum": [
-        "default",
-        "recommended"
+        "Default",
+        "Recommended"
       ],
-      "default": "default",
+      "default": "Default",
       "x-priority": "important",
       "x-prompt": "Which config do you prefer?",
       "description": "Solhint config (Default or Recommended)"
