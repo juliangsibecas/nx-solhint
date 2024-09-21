@@ -16,7 +16,7 @@ Solhint generators and inferred tasks for Nx.
 ## Installation
 
 ```bash
-pnpm add -D nx-solhint
+nx add nx-solhint
 ```
 <br></br>
 ## Generator
