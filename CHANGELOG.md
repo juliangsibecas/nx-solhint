@@ -1,3 +1,14 @@
+## 0.1.3 (2024-09-21)
+
+
+### 🚀 Features
+
+- add pre commit build ([0306fb2](https://github.com/juliangsibecas/nx-solhint/commit/0306fb2))
+
+### ❤️  Thank You
+
+- Julián Gómez Sibecas @juliangsibecas
+
 ## 0.1.2 (2024-09-21)
 
 
